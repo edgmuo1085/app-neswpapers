@@ -1,0 +1,9 @@
+<ion-grid fixed="">
+  <ion-row>
+    <ng-container *ngFor="let articulo of articulos; let i = index">
+      <ion-col size="12" sizeLg="3" sizeMd="4" sizeSm="6" sizeXs="12">
+        <app-articulo [articulo]="articulo" [i]="i + 1"></app-articulo>
+      </ion-col>
+    </ng-container>
+  </ion-row>
+</ion-grid>
