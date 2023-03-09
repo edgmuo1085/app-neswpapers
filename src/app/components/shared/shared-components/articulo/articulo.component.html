@@ -1,10 +1,19 @@
 <ion-card>
   <ion-card-subtitle class="ion-margin">
-    <span class="text-primary">{{ i }}. </span>
-    <span class="articulo-name">{{ articulo.source.name }} </span>
+    <ion-row class="ion-align-items-center">
+      <ion-col class="ion-margin" (click)="urlRedirect()">
+        <span class="text-primary">{{ i }}. </span>
+        <span class="articulo-name">{{ articulo.source.name }} </span>
+      </ion-col>
+      <ion-col class="ion-text-right ion-align-items-end">
+        <ion-button (click)="onClick()" fill="clear">
+          <ion-icon slot="icon-only" name="ellipsis-vertical-outline"></ion-icon>
+        </ion-button>
+      </ion-col>
+    </ion-row>
   </ion-card-subtitle>
 
-  <ion-card-title class="ion-padding-horizontal ion-margin-bottom">
+  <ion-card-title class="ion-padding-horizontal ion-margin-bottom" (click)="urlRedirect()">
     {{ articulo.title }}
   </ion-card-title>
 

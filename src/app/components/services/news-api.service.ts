@@ -26,13 +26,10 @@ export class NewsApiService {
   }
 
   getTopHeadlines(): Observable<Article[]> {
-    const url = `top-headlines`;
-    return this.ejecutarQuery<NewsResponse>(url).pipe(map(({ articles }) => articles));
+    return this.getArticulosPorCategorias('business');
   }
 
   getTopHeadlinesByCategory(category: string, cargarMas: boolean = false): Observable<Article[]> {
-    const url = `top-headlines?category=${category}`;
-
     if (cargarMas) {
       return this.getArticulosPorCategorias(category);
     }
