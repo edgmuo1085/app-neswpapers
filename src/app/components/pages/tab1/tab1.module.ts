@@ -8,13 +8,7 @@ import { Tab1PageRoutingModule } from './tab1-routing.module';
 import { SharedComponentsModule } from '../../shared/shared-components/shared-components.module';
 
 @NgModule({
-  imports: [
-    IonicModule,
-    CommonModule,
-    FormsModule,
-    Tab1PageRoutingModule,
-    SharedComponentsModule,
-  ],
+  imports: [IonicModule, CommonModule, FormsModule, Tab1PageRoutingModule, SharedComponentsModule],
   declarations: [Tab1Page],
 })
 export class Tab1PageModule {}

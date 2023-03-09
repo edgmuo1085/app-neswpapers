@@ -11,12 +11,7 @@
     </ion-toolbar>
   </ion-header>
 
-  <ion-segment
-    [value]="selectCategoria"
-    (ionChange)="segmentChanged($event)"
-    scrollable=""
-    mode="md"
-  >
+  <ion-segment [value]="selectCategoria" (ionChange)="segmentChanged($event)" scrollable="" mode="md">
     <ng-container *ngFor="let categoria of categorias">
       <ion-segment-button [value]="categoria">
         <ion-label class="ion-text-capitalize">{{categoria }}</ion-label>
