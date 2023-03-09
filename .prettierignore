@@ -1,0 +1,14 @@
+# this file is to register exceptions to prettier formatter.
+#*.sass
+packeage.json
+packeage-lock.json
+yarn.lock
+dist
+coverage
+node_modules
+android
+configuration
+documentation
+resources
+www
+.angular/
